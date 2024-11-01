@@ -373,7 +373,7 @@ ceuluares parados hasta 480px   se ejecutara estos cambios moviles
 @media screen and (min-width: 600px) {
     body {
         .color_fondo{
-        background: orange;
+            background: orange;
         }
     }
 }
