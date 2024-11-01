@@ -369,14 +369,23 @@ main{
         }    
     }   
 }
-    @media screen and (min-width: 400px) {
-        body {
-            background-color: lightgreen;
+    @media screen and (min-width: 100px) {
+    body {
+        background-color: cyan;
+    }
+}
+@media screen and (min-width: 300px) {
+    body {
+        background-color: orange;
+    }
+}@media screen and (min-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+}
+    @media screen and (min-width: 1000px) {
+    body {
+        background-color: gray;
         }
     }
-    @media screen and (min-width: 800px) {
-        body {
-          background-color: lavender;
-        }
-      }
 
