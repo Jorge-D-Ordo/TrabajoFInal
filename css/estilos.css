@@ -10,38 +10,7 @@
 /******** para todas las paginas en general ********/
 /***************************************************/
 /********       Limapiar y ordenar          ********/
-*{
-    /*fuente*/
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem; 
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-h1,h2,h3,h4,h5,h6{
-    font-family: "Playwrite DE Grund", cursive;
-    text-align:center ;
-}
-.razonSocial{
-    font-family: "Playwrite AR", serif;
-    color: #69177e;
-    font-size: 1.2em;
-}
-p{
-    font-size: 1rem;
-}
-h1{
-    font-size: 3rem; 
-    margin-bottom: 4rem ;
-}
-h2{
-    font-size: 2rem;
-    margin: 3rem ;
-}
-h3{
-    font-size: 1.325rem ;
-    margin: 2rem ;
-}
+
 section[id]{
     scroll-margin-top:150px;
 }
@@ -62,12 +31,12 @@ li{
         color:black;
     }
 }
-.color_fondo{
+/*.color_fondo{
     background: #efb3ff;
     background: linear-gradient(121deg,#efb3ff 0%, #f2d6f8 16%, #efb3ff 33%, #f2d6f8 50%, #efb3ff 67%, #f2d6f8 84%, #efb3ff 100%);
     background: -webkit-linear-gradient(121deg,#efb3ff 0%, #f2d6f8 16%, #efb3ff 33%, #f2d6f8 50%, #efb3ff 67%, #f2d6f8 84%, #efb3ff 100%);
     background: -moz-linear-gradient(121deg,#efb3ff 0%, #f2d6f8 16%, #efb3ff 33%, #f2d6f8 50%, #efb3ff 67%, #f2d6f8 84%, #efb3ff 100%);
-}
+}*/
 .fuenteNegrita{
     font-weight: 700;
 }
@@ -133,6 +102,42 @@ footer{           /* header, */
         margin-bottom:1rem ;
     }
 }
+body{
+    .colorFondo{
+        background: #efb3ff;
+        background: linear-gradient(121deg,#efb3ff 0%, #f2d6f8 16%, #efb3ff 33%, #f2d6f8 50%, #efb3ff 67%, #f2d6f8 84%, #efb3ff 100%);
+        background: -webkit-linear-gradient(121deg,#efb3ff 0%, #f2d6f8 16%, #efb3ff 33%, #f2d6f8 50%, #efb3ff 67%, #f2d6f8 84%, #efb3ff 100%);
+        background: -moz-linear-gradient(121deg,#efb3ff 0%, #f2d6f8 16%, #efb3ff 33%, #f2d6f8 50%, #efb3ff 67%, #f2d6f8 84%, #efb3ff 100%);  
+    }
+    *{
+        /*fuente*/
+        font-family: "Montserrat", sans-serif;
+        font-size: .8rem; 
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-family: "Playwrite DE Grund", cursive;
+        text-align:center ;
+    }    
+    p{
+        font-size: .8rem;
+    }
+    h1{
+        font-size: 2.4rem; 
+        margin-bottom: 3.2rem ;
+    }
+    h2{
+        font-size: 1.6rem;
+        margin: 2.4rem ;
+    }
+    h3{
+        font-size: 1.06rem ;
+        margin: 1.6rem ;
+    }
+
+}    
 header{   
     width: 100%;
     margin: 0;
@@ -140,11 +145,11 @@ header{
     top:0;
     .container_header_grid {
         display: grid;
-        grid-template-columns: 1fr 3fr 4fr 1.5fr 1.5fr 0.5fr 60px;
-        grid-template-rows: 1.2fr 0.5fr 0.5fr;
-        grid-template-areas:    "logo_inst     menu        menu         menu     menu       logo_prod   logo_prod"
-                                "logo_inst filtro_prod  busq_prod  busq_prod  usuario_sup  usuario_sup usuario_reg"
-                                "logo_inst filtro_prod  busq_prod  busq_prod  usuario_inf  usuario_inf usuario_reg";
+        grid-template-columns: 60px 4fr 1fr  30px;
+        grid-template-rows:    1fr 1fr 1fr;
+        grid-template-areas:    "empresa     empresa    empresa      menu "
+                                "logo_inst  busq_prod   usuario     usuario "
+                                "logo_inst filtro_prod logo_prod  logo_prod";
         /*
         grid-template-areas:    "logo_inst     menu        menu         menu     menu       logo_prod   logo_prod"
                                 "logo_inst filtro_prod  busq_prod  busq_prod  usuario_sup  usuario_sup usuario_reg"
@@ -159,24 +164,16 @@ header{
         align-content: space-evenly;
     }
     .nav_boton{
+        grid-area: menu;
         border: none;
         background-color: inherit;
         img{
             width: 30px;           
         }
     }    
-    
-    .logo_institucional { 
-        grid-area: logo_inst;
-        object-fit: fill;
-        img{ 
-            width: 80%; 
-            margin: .5%;
-        }
-    }
     .menu_principal { 
         grid-area: menu;
-        display: none; 
+        /*display: none;  TODO */
         li{ 
             display: inline;     
             margin: auto 2.2%;
@@ -189,12 +186,32 @@ header{
             font-weight: 700;          
         }
     }
-    .logo_productos { 
-        grid-area: logo_prod; 
+    .espacio_vacio { 
+        grid-area: vacio; 
+    }
+    .empresa { 
+        grid-area: empresa;
+        font-family: "Playwrite AR", serif;
+        color: #69177e;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+    .logo_institucional { 
+        grid-area: logo_inst;
         object-fit: fill;
         img{ 
-            width: 80%;
+            width: 100%; 
             margin: .5%;
+        }        
+    }
+    .logo_productos { 
+        grid-area: logo_prod; 
+        object-fit: fit;
+        margin: auto;
+        img{ 
+            width: 100%;
+            margin: .5%;
+            
         }
     }
     .filtro_producto { 
@@ -208,29 +225,31 @@ header{
             width: 100%;
         }    
     }
-    .cta_usuario_sup { 
-        grid-area: usuario_sup; 
+    .inicioSesion { 
+        grid-area: usuario;
+        text-decoration: none; 
         text-align:center;
         width: 98%;
-        input{
-            width: 100%;
+        font-size:0.5rem;
+        border: 2px solid black;
+        border-radius: 10px;
+        a{
+            font-size:0.8rem;
+            text-decoration: none;
+            font-weight: 700;
+
         }
     } 
-    .cta_usuario_inf { 
-        grid-area: usuario_inf; 
-        text-align:center;
-        width: 98%;
-        input{
-            width: 100%;
-        } 
-    }   
-    .cta_usuario_reg { 
-        grid-area: usuario_reg; 
-        justify-items:center;
-        align-items:center;
-    }   
 }
 main{
+    .razonSocial{
+        font-family: "Playwrite AR", serif;
+        color: #69177e;
+        font-size: 1.2em;                            
+        font-weight: 700;
+    }
+
+    
 /***************************************************/
 /********       para la pagina index        ********/
 /***************************************************/
@@ -349,8 +368,108 @@ main{
         }
     }    
 }
-/* @media screen and (min-width : 750px){
-ceuluares parados hasta 480px   se ejecutara estos cambios moviles
+@media screen and (max-width : 480px){
+    /*
+        320px — 480px: Dispositivos móviles
+        481px — 768px: iPads, Tabletas
+        769px — 1024px: pantallas pequeñas, laptops
+        1025px — 1200px: Computadoras de escritorio, pantallas grandes
+        1201px y más —  Pantallas extra-grandes, TV 
+    */
+    header{
+        .menu_principal { 
+            display: none; 
+        }  
+    }      
+}
+@media screen and (min-width : 480px)and (max-width : 768px){
+    body{
+        .colorFondo{
+            background: orange;
+        }
+        *{
+            /*fuente*/
+            font-size: .9rem; 
+        }
+        p{
+            font-size: .9rem;
+        }
+        h1{
+            font-size: 2.7rem; 
+            margin-bottom: 3.6rem ;
+        }
+        h2{
+            font-size: 1.8rem;
+            margin: 2.7rem ;
+        }
+        h3{
+            font-size: 1.1925rem ;
+            margin: 1.8rem ;
+        }
+    }
+    header{
+        .container_header_grid {
+            grid-template-columns: 1fr 3fr 4fr 1.5fr 1.5fr 0.5fr 60px;
+            grid-template-rows: 2fr 1fr ;
+            grid-template-areas:    "logo_inst     menu        menu         menu     menu       menu    usuario "
+                                    "logo_inst filtro_prod  busq_prod  busq_prod  busq_prod   busq_prod     logo_prod"
+        }
+        .nav_boton{
+            display: none;
+        }
+        .menu_principal{
+            display: block;
+        }
+    }  
+    main{
+        .razonSocial{
+                font-size: 1.1em;                            
+            }
+        
+    }
+
+}
+@media screen and (min-width : 768px){
+    /*
+        320px — 480px: Dispositivos móviles
+        481px — 768px: iPads, Tabletas
+        769px — 1024px: pantallas pequeñas, laptops
+        1025px — 1200px: Computadoras de escritorio, pantallas grandes
+        1201px y más —  Pantallas extra-grandes, TV 
+
+    */ 
+    body{
+        .colorFondo{
+                background: yellow;
+        }
+        *{
+            /*fuente*/
+            font-family: "Montserrat", sans-serif;
+            font-size: 1rem; 
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        h1,h2,h3,h4,h5,h6{
+            font-family: "Playwrite DE Grund", cursive;
+            text-align:center ;
+        }    
+        p{
+            font-size: 1rem;
+        }
+        h1{
+            font-size: 3rem; 
+            margin-bottom: 4rem ;
+        }
+        h2{
+            font-size: 2rem;
+            margin: 3rem ;
+        }
+        h3{
+            font-size: 1.325rem ;
+            margin: 2rem ;
+        }
+    }
     header{
         .container_header_grid {
             grid-template-columns: 1fr 3fr 4fr 1.5fr 1.5fr 0.5fr 60px;
@@ -358,22 +477,17 @@ ceuluares parados hasta 480px   se ejecutara estos cambios moviles
             grid-template-areas:    "logo_inst     menu        menu         menu     menu       logo_prod   logo_prod"
                                     "logo_inst filtro_prod  busq_prod  busq_prod  usuario_sup  usuario_sup usuario_reg"
                                     "logo_inst filtro_prod  busq_prod  busq_prod  usuario_inf  usuario_inf usuario_reg";
-
-
         }
         .nav_boton{
             display: none;
         }
         .menu_principal{
-            display:block;
-        }    
-    }   
-} */
-
-@media screen and (min-width: 600px) {
-    body {
-        .color_fondo{
-            background: orange;
+            display: block;
+        }  
+    }    
+    main{
+        .razonSocial{
+            font-size: 1.2em;                            
         }
     }
 }

@@ -14,15 +14,17 @@
         <div class="logo_institucional">
           <a href="index.html">
             <img class="logo" src="./assets/img/rosa _128px.png" alt="logo de Fragancias Argentinas, un diujo de la flor de la rosa"> 
-          </a>        
+          </a> 
         </div>
-
+        <div class="empresa">
+          <p>Fragancias Argentinas</p> 
+        </div> 
        <!--******************@media  Estos pasos son para la Movil ******************-->
       <div class="nav_despleable">
         <button  type="submit" class="nav_boton" onclick="adsadf">
           <img src="./assets/img/Redes/menu3lineas.svg" alt="icono de 3 lineas de menu"> 
         </button>
-        <!--TODO *************************** ni idea como hacer *******************
+        <!--TODO **********ni idea como hacelo desplegable*******************
         <nav >
           <ul>
             <li><a href="index.html">Inicio</a></li>  
@@ -36,7 +38,7 @@
         </nav>
         -->        
       </div>
-       <!--******************@media  Estos pasos son para la PC ******************-->
+       <!--******************@media  Estos pasos son para la Monitor ******************-->
         <div class="menu_principal">
           <nav>
             <ul>
@@ -56,9 +58,9 @@
           </a>
         </div>
         <div class="filtro_producto">
-          <label for="genero">Fragancia :</label>
-          <select name="opcion_genero" id="opcionGenero">
-            <option value="todos"selected>todas</option>>
+          <label for="opcionGenero">Fragancia:</label>
+          <select id="opcionGenero">
+            <option value="todos" selected>todas</option>
             <option value="femenino">femeninas</option>
             <option value="masculino">masculinas</option>
             <option value="unisex">unisex</option> 
@@ -67,19 +69,13 @@
         <div class="busqueda_producto">
           <input type="search" placeholder="Buscar una fragancia...." id="BusquedaText">   
         </div>
-        <div class="cta_usuario_sup">
-          <input type="text" placeholder="Usuario...."id="RegUsuario">
-        </div>
-        <div class="cta_usuario_inf">
-          <input type="password" placeholder="Clave...."id="RegClave">
-        </div>
-        <div class="cta_usuario_reg">
-          <button onclick="location.href='./pages/registro.html'">Nuevo usuario</button> 
-        </div>
+        <div class="inicioSesion" id="usuario">
+          <a href="./pages/usuario.html">Sesión</a>
+        
       </section>
     </header>
-    <main class="color_fondo">
-      <h1><div class="razonSocial">Fragancias Argentinas</div> -- Perfumes Millanel (alternativas olfativas) --</h1>
+    <main class="colorFondo">
+      <h1><div class="razonSocial">Fragancias Argentinas</div> Perfumes Millanel (alternativas olfativas) </h1>
       <section id="oferta_f">
         <h2>Ofertas para mujer</h2>
         <div class="flex-container-oferta">
@@ -150,7 +146,7 @@
           <img src="./assets/img/Redes/Instagram_logo_2022.svg" alt="Logo instragram" style="width:20px">
         </a>
         <a href="https://www.linkedin.com" target="_blank">
-          <img src="./assets/img/Redes/linkedin-icon.svg" alt="Logo linkedin" style="width:20px">
+          <img src="./assets/img/Redes/LinkedIn_icon2.svg" alt="Logo linkedin" style="width:20px">
         </a>
         <a href="https://web.telegram.org/k/"target="_blank">
           <img src="./assets/img/Redes/Telegram_logo.svg" alt="Logo Telegram" style="width:21px">
