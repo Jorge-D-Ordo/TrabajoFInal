@@ -14,13 +14,8 @@
 section[id]{
     scroll-margin-top:150px;
 }
-.nosotros{
-    margin: 0 15% ;
-    text-align:justify
-}
-li{
-    margin-top: 1rem;
-}
+
+
 .fuente50px{
     font-size: 55px;
 }
@@ -125,15 +120,15 @@ body{
         font-size: .8rem;
     }
     h1{
-        font-size: 2.4rem; 
-        margin-bottom: 3.2rem ;
+        font-size: 1.7rem;
+        margin-bottom: 2rem ;
     }
     h2{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         margin: 2.4rem ;
     }
     h3{
-        font-size: 1.06rem ;
+        font-size: 0.93rem ;
         margin: 1.6rem ;
     }
 
@@ -269,7 +264,17 @@ main{
         background-color: rgb(61, 206, 206);
         padding: 1%;
         margin: 2%;
-        width: 35%;
+        width: 95%;
+    }
+    .nosotros{
+        margin: 0 15% ;
+        text-align:justify
+        ul{
+            li{
+                padding:  20rem AUTO;
+            }
+        }
+        
     }   
 /***************************************************/
 /********     para la pagina productos      ********/
@@ -324,7 +329,7 @@ main{
 /***************************************************/
 /********       para la pagina carrto       ********/
 /***************************************************/
-/********       falta ultima revision       ********/border
+/********       falta ultima revision       ********/
     .tabla{
         width: 80%;
         margin: 0 auto;
@@ -368,6 +373,7 @@ main{
         }
     }    
 }
+/***********************************************************************************************/
 @media screen and (max-width : 480px){
     /*
         320px — 480px: Dispositivos móviles
@@ -382,6 +388,7 @@ main{
         }  
     }      
 }
+/***********************************************************************************************/
 @media screen and (min-width : 480px)and (max-width : 768px){
     body{
         .colorFondo{
@@ -425,10 +432,31 @@ main{
         .razonSocial{
                 font-size: 1.1em;                            
             }
-        
+        /***************************************************/
+        /********       para la pagina index        ********/
+        /***************************************************/
+        /********       falta ultima revision       ********/
+        .flex-container-oferta{
+            margin:0 auto;
+            display:flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            align-content: space-evenly;
+            justify-content:space-evenly;
+            align-items: center;    
+        }
+        .flex-item-oferta{
+            border: 10px solid rgb(38, 129, 129);
+            border-radius: 30px; 
+            background-color: rgb(61, 206, 206);
+            padding: 1%;
+            margin: 2%;
+            width: 35%;
+        }   
     }
 
 }
+/***********************************************************************************************/
 @media screen and (min-width : 768px){
     /*
         320px — 480px: Dispositivos móviles
@@ -490,5 +518,26 @@ main{
             font-size: 1.2em;                            
         }
     }
+        /***************************************************/
+        /********       para la pagina index        ********/
+        /***************************************************/
+        /********       falta ultima revision       ********/
+        .flex-container-oferta{
+            margin:0 auto;
+            display:flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            align-content: space-evenly;
+            justify-content:space-evenly;
+            align-items: center;    
+        }
+        .flex-item-oferta{
+            border: 10px solid rgb(38, 129, 129);
+            border-radius: 30px; 
+            background-color: rgb(61, 206, 206);
+            padding: 1%;
+            margin: 2%;
+            width: 35%;
+        }   
 }
 
