@@ -141,7 +141,7 @@ header{
     .container_header_grid {
         display: grid;
         grid-template-columns: 60px 4fr 1fr  30px;
-        grid-template-rows:    1fr 1fr 1fr;
+        grid-template-rows:    1fr 1fr 1.5fr;
         grid-template-areas:    "empresa     empresa    empresa      menu "
                                 "logo_inst  busq_prod   usuario     usuario "
                                 "logo_inst filtro_prod logo_prod  logo_prod";
@@ -163,7 +163,6 @@ header{
         border: none;
         position: relative;
         .nav_boton{
-           /* grid-area: menu;*/
             border: none;
             background-color: inherit;
             img{
@@ -171,27 +170,31 @@ header{
             }
         }
         .nav-item{
-            display: none; /* Oculta el menú por defecto */
-            position: absolute; /* Asegura que se superponga al contenido */
-            background-color: white; /* Fondo del menú */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el menú */
-            z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
+            display: none; 
+            position: absolute; 
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000; 
             ul {
                 padding: 0;
                 margin: 0;
                 list-style-type: none; /* Elimina puntos de la lista */
-            }
-            li {
-                margin: 10px 0; /* Espaciado vertical entre items */
-            }
-            a {
-                text-decoration: none; 
-                font-size: 1.3rem;     
-                font-weight: 700;          
+                li {
+                    margin: 10px 0; /* Espaciado vertical entre items */        
+                    a {
+                        text-decoration: none; 
+                        font-size: 1.3rem;     
+                        font-weight: 700;  
+
+                        &:hover {
+                            color: #007bff; /* Color al pasar el ratón */        
+                        }
+                    }    
+                }
             }
         }
     }
-    .nav_despleable:focus-within .nav-item {
+    &:focus-within .nav-item {
         display: block; /* Muestra el menú cuando el botón tiene foco */
             
     }    
@@ -215,10 +218,15 @@ header{
     }
     .empresa { 
         grid-area: empresa;
-        font-family: "Playwrite AR", serif;
         color: #69177e;
-        font-size: 1.2em;
-        font-weight: 700;
+        
+        margin: 0 auto;
+        p{
+            font-family: "Playwrite AR", serif;
+            font-size: 1.2em;
+            font-weight: 700;
+        }
+        
     }
     .logo_institucional { 
         grid-area: logo_inst;
@@ -312,7 +320,7 @@ main{
             list-style-type: none;
             padding:0 4%;  
             p{ 
-                font-size: .9em;
+                font-size: .8em;
                 font-weight: 700;
                 border: 3px solid rgb(229, 139, 247);
                 background-color: rgb(238, 181, 250);
@@ -340,7 +348,52 @@ main{
 /********       comenzando                  ********/
 
     .contenedor_tarjetas{
+        background-color: rgb(150, 206, 61);
+    }
+    .contenedor_tarjetas{
+        margin:0 auto;
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        /*align-content: space-evenly;*/
+        justify-content:space-evenly;
+        align-items: center;    
+    }
+    .item-tarjeta{
+        border: 10px solid rgb(38, 129, 129);
+        border-radius: 30px; 
         background-color: rgb(61, 206, 206);
+        padding: 1%;
+        margin: 2%;
+        width: 95%;
+        text-align: center;
+        img{
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            /*width: 100%;*/
+            object-fit: cover;
+        }
+        ul{ 
+            list-style-type: none;  /*puesto*/
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+        li{ 
+            display: inline-block;     
+            margin: auto 2.2%;
+            list-style-type: none;
+            padding:0 4%;  
+            p{ 
+                font-size: .8em;
+                font-weight: 700;
+                border: 3px solid rgb(229, 139, 247);
+                background-color: rgb(238, 181, 250);
+                border-radius: 20px; 
+                padding: 4px;
+                margin: 4px;
+            }
+
+        }
     }
 
 

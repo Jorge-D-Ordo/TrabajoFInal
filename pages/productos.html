@@ -13,98 +13,135 @@
     <!-- aca va el contenido que ve el usuario-->
     <body>
         <header id="header" class="color_principal">
-            <section class="contenedor_header">
-                <div class="header-flex-item">
-                    <a href="index.html">
-                        <img class="logo" src="../assets/img/rosa _128px.png" alt="logo de Fragancias Argentinas, un diujo de la flor de la rosa"> 
-                    </a>
+            <section class="container_header_grid">
+                <div class="logo_institucional">
+                    <a href="../index.html">
+                    <img class="logo" src="../assets/img/rosa _128px.png" alt="logo de Fragancias Argentinas, un diujo de la flor de la rosa"> 
+                    </a> 
                 </div>
-                <div class="header-flex-item">
+                <div class="empresa">
+                    <p>Fragancias Argentinas</p> 
+                </div> 
+                <!--******************@media  Estos pasos son para la Movil ******************-->
+                <div class="nav_desplegable">
+                <button  class="nav_boton" aria-expanded="false">
+                    <img src="../assets/img/Redes/menu3lineas.svg" alt="icono de 3 lineas de menu"> 
+                </button>
+                <nav class="nav-item">
+                    <ul>
+                    <li><a href="../index.html">Inicio</a></li>  
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="../index.html#nosotros">Nosotros</a></li>
+                    <li><a href=".contacto.html">Contacto</a></li>
+                    <li>
+                        <a href=".carrito.html" >
+                        <img src="../assets/img/Redes/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
+                        </a>
+                        </li>
+                    </ul>
+                </nav>        
+                </div>
+                <!--******************@media  Estos pasos son para la Monitor ******************-->
+                <div class="menu_principal">
                     <nav>
-                        <ul>
-                            <li><a href="../index.html">Inicio</a></li>   <!-- pagina con ofrtas-->
-                            <li><a href="./productos.html">Productos</a></li>
-                            <li><a href="../index.html#nosotros">Nosotros</a></li>
-                            <li><a href="./contacto.html">Contacto</a></li>
-                            <li><a href="./carrito.html" >
-                            <img src="../assets/img/Redes/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
-                            </a></li>
-                        </ul>
-                    </nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>   <!-- pagina con ofrtas-->
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="../index.html#nosotros">Nosotros</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./carrito.html" >
+                        <img src="../assets/img/Redes/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
+                        </a></li>
+                    </ul>
+                    </nav>        
                 </div>
-                <div class="header-flex-item">
+                <div class="logo_productos">
                     <a href="https://www.millanel.com" target="_blank">
-                        <img class="logo" src="../assets/img/millanel_logo.png" alt="logo de millanel cosmeticos, logotipo flor con nombre debajo "> 
+                    <img class="logo" src="../assets/img/millanel_logo.png" alt="logo de millanel cosmeticos, logotipo flor con nombre debajo "> 
                     </a>
+                </div>
+                <div class="filtro_producto">
+                    <label for="opcionGenero">Fragancia:</label>
+                    <select id="opcionGenero">
+                    <option value="todos" selected>todas</option>
+                    <option value="femenino">femeninas</option>
+                    <option value="masculino">masculinas</option>
+                    <option value="unisex">unisex</option> 
+                    </select>    
+                </div>
+                <div class="busqueda_producto">
+                    <input type="search" placeholder="Buscar una fragancia...." id="BusquedaText">   
+                </div>
+                <div class="inicioSesion" id="usuario">
+                    <a href="./usuario.html">Sesión</a>
                 </div>
             </section>
-            <section class="contenedor_sub_nav">
-                <div class="sub_nav-flex-item">
-                    <label for="genero">Fragancia :</label>
-                    <select name="genero" id="genero">
-                        <option value="todos">todas</option>
-                        <option value="femenino">femeninas</option>
-                        <option value="masculino">masculinas</option>
-                        <option value="unisex">unisex</option>  
-                    </select> 
-                </div> 
-                <input type="search" placeholder="Buscar...." class="sub_nav-flex-item" id="BusquedaText">   
-                <div class="sub_nav-flex-item"> 
-                    <input type="text" placeholder="Usuario...."id="RegUsuario">
-                    <input type="password" placeholder="Clave...."id="RegClave">
-                    <button onclick="location.href='./pages/registro.html'">Registro</button> 
-                </div>      
-            </section>   
         </header>
-
-
-
-
-
-
-
         <main>
             <h1>Nuestra lista de perfumes</h1>
             <section id="fragancia_f">
                 <h2>Fragancias Femeninas</h2>
                 <div class="contenedor_tarjetas">
-                    <img src="../assets/img/productos/F_Perfume001.jpg" alt="productoF001, perfume mujer, Alternativa de Chanel Nº5 de Chanel (floral aldehidico), presentacion 30ml,60ml,100ml" class="tarjeta-item">
-                    <img src="../assets/img/productos/F_Perfume019.jpg" alt="productoF019, perfume mujer, Alternativa de Tommy Girl de Tommy Hilfiger (floral frutal), presentacion 30ml,60ml,100ml" class="tarjeta-item">
-                    <img src="../assets/img/productos/F_Perfume024.jpg" alt="productoF024, perfume mujer, Alternativa de Carolina Herrera de Carolina Herrera (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume036.jpg" alt="productoF036, perfume mujer, Alternativa de 212 de Carolina Herrera (chypre floral), presentacion 30ml, 60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume062.jpg" alt="productoF062, perfume mujer, Alternativa de Flower de Kenzo (oriental floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume076.jpg" alt="productoF076, perfume mujer, Alternativa de Cabotine de Gres (floral verde), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume080.jpg" alt="productoF080, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume081.jpg" alt="productoF081, perfume mujer, Alternativa de Halloween de Jesús Del Pozo (floral frutal), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume096.jpg" alt="productoF096, perfume mujer, Alternativa de J'adore de Cristian Dior (floral frutal), presentacion 30ml,60ml,100ml">                
-                    <img src="../assets/img/productos/F_Perfume117.jpg" alt="productoF117, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume124.jpg" alt="productoF124, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume132.jpg" alt="productoF132, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume133.jpg" alt="productoF133, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume161.jpg" alt="productoF161, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume173.jpg" alt="productoF173, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume185.jpg" alt="productoF185, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume186.jpg" alt="productoF186, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume201.jpg" alt="productoF201, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume204.jpg" alt="productoF204, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume206.jpg" alt="productoF206, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume209.jpg" alt="productoF209, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume215.jpg" alt="productoF215, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume221.jpg" alt="productoF221, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume233.jpg" alt="productoF233, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume242.jpg" alt="productoF242, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume247.jpg" alt="productoF247, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume262.jpg" alt="productoF262, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume263.jpg" alt="productoF263, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume266.jpg" alt="productoF266, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">                
-                    <img src="../assets/img/productos/F_Perfume268.jpg" alt="productoF268, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume269.jpg" alt="productoF269, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume272.jpg" alt="productoF272, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume275.jpg" alt="productoF275, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume279.jpg" alt="productoF279, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume282.jpg" alt="productoF282, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
-                    <img src="../assets/img/productos/F_Perfume283.jpg" alt="productoF283, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">                
-                    <img src="../assets/img/productos/F_Perfume285.jpg" alt="productoF285, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume001.jpg" alt="productoF001, perfume mujer, Alternativa de Chanel Nº5 de Chanel (floral aldehidico), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li><p id="oferta6-30">Comprar 30ml</p></li>
+                            <li><p id="oferta6-60">Comprar 60ml</p></li>
+                            <li><p id="oferta6-100">Comprar 100ml</p></li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume019.jpg" alt="productoF019, perfume mujer, Alternativa de Tommy Girl de Tommy Hilfiger (floral frutal), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li><p id="oferta6-30">Comprar 30ml</p></li>
+                            <li><p id="oferta6-60">Comprar 60ml</p></li>
+                            <li><p id="oferta6-100">Comprar 100ml</p></li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume001.jpg" alt="productoF001, perfume mujer, Alternativa de Chanel Nº5 de Chanel (floral aldehidico), presentacion 30ml,60ml,100ml">
+                        <ul> 
+                            <li><p id="oferta6-30">Comprar 30ml</p></li>
+                            <li><p id="oferta6-60">Comprar 60ml</p></li>
+                            <li><p id="oferta6-100">Comprar 100ml</p></li>
+                        </ul>
+                    </div>
+                    <div class="item-tarjeta">
+                        <img src="../assets/img/productos/F_Perfume024.jpg" alt="productoF024, perfume mujer, Alternativa de Carolina Herrera de Carolina Herrera (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume036.jpg" alt="productoF036, perfume mujer, Alternativa de 212 de Carolina Herrera (chypre floral), presentacion 30ml, 60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume062.jpg" alt="productoF062, perfume mujer, Alternativa de Flower de Kenzo (oriental floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume076.jpg" alt="productoF076, perfume mujer, Alternativa de Cabotine de Gres (floral verde), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume080.jpg" alt="productoF080, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume081.jpg" alt="productoF081, perfume mujer, Alternativa de Halloween de Jesús Del Pozo (floral frutal), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume096.jpg" alt="productoF096, perfume mujer, Alternativa de J'adore de Cristian Dior (floral frutal), presentacion 30ml,60ml,100ml">                
+                        <img src="../assets/img/productos/F_Perfume117.jpg" alt="productoF117, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume124.jpg" alt="productoF124, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume132.jpg" alt="productoF132, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume133.jpg" alt="productoF133, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume161.jpg" alt="productoF161, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume173.jpg" alt="productoF173, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume185.jpg" alt="productoF185, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume186.jpg" alt="productoF186, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume201.jpg" alt="productoF201, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume204.jpg" alt="productoF204, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume206.jpg" alt="productoF206, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume209.jpg" alt="productoF209, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume215.jpg" alt="productoF215, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume221.jpg" alt="productoF221, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume233.jpg" alt="productoF233, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume242.jpg" alt="productoF242, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume247.jpg" alt="productoF247, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume262.jpg" alt="productoF262, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume263.jpg" alt="productoF263, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume266.jpg" alt="productoF266, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">                
+                        <img src="../assets/img/productos/F_Perfume268.jpg" alt="productoF268, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume269.jpg" alt="productoF269, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume272.jpg" alt="productoF272, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume275.jpg" alt="productoF275, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume279.jpg" alt="productoF279, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume282.jpg" alt="productoF282, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
+                        <img src="../assets/img/productos/F_Perfume283.jpg" alt="productoF283, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">                
+                        <img src="../assets/img/productos/F_Perfume285.jpg" alt="productoF285, perfume mujer, Alternativa de Edem de Chanel (floral), presentacion 30ml,60ml,100ml">
                 </div>
                 <!--             
                 aun falta agregar unos cuantos femeninos el siguiente es el numro  117>
