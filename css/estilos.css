@@ -158,13 +158,42 @@ header{
         align-items:center;
         align-content: space-evenly;
     }
-    .nav_boton{
+    .nav_desplegable {
         grid-area: menu;
         border: none;
-        background-color: inherit;
-        img{
-            width: 30px;           
+        position: relative;
+        .nav_boton{
+           /* grid-area: menu;*/
+            border: none;
+            background-color: inherit;
+            img{
+                width: 30px;           
+            }
         }
+        .nav-item{
+            display: none; /* Oculta el menú por defecto */
+            position: absolute; /* Asegura que se superponga al contenido */
+            background-color: white; /* Fondo del menú */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para el menú */
+            z-index: 1000; /* Asegura que el menú esté sobre otros elementos */
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none; /* Elimina puntos de la lista */
+            }
+            li {
+                margin: 10px 0; /* Espaciado vertical entre items */
+            }
+            a {
+                text-decoration: none; 
+                font-size: 1.3rem;     
+                font-weight: 700;          
+            }
+        }
+    }
+    .nav_despleable:focus-within .nav-item {
+        display: block; /* Muestra el menú cuando el botón tiene foco */
+            
     }    
     .menu_principal { 
         grid-area: menu;
@@ -415,7 +444,7 @@ main{
         .menu_principal { 
             display: none; 
         }  
-    }      
+    }  
 }
 /***********************************************************************************************/
 @media screen and (min-width : 480px)and (max-width : 768px){
