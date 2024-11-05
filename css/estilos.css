@@ -19,7 +19,7 @@ section[id]{
 .fuente50px{
     font-size: 55px;
 }
-.color_principal{
+.colorPrincipal{
     background-color:  #ea98ff;
     color: black;
     a{
@@ -63,9 +63,9 @@ footer{           /* header, */
     .conf-whatsapp{
         position:fixed;
         width:35px;
-        bottom: 8px;
+        bottom: 30px;
         color:rgb(44, 181, 44);
-        right: 20px;
+        right: 15px;
         font-size: 5em;
     }    
     .contenedor_header{
@@ -98,6 +98,8 @@ footer{           /* header, */
     }
 }
 body{
+
+    
     .colorFondo{
         background: #efb3ff;
         background: linear-gradient(121deg,#efb3ff 0%, #f2d6f8 16%, #efb3ff 33%, #f2d6f8 50%, #efb3ff 67%, #f2d6f8 84%, #efb3ff 100%);
@@ -140,8 +142,8 @@ header{
     top:0;
     .container_header_grid {
         display: grid;
-        grid-template-columns: 60px 4fr 1fr  30px;
-        grid-template-rows:    1fr 1fr 1.5fr;
+        grid-template-columns: 1fr 4fr 0.3fr  1fr;
+        grid-template-rows:    1fr 1fr 1fr;
         grid-template-areas:    "empresa     empresa    empresa      menu "
                                 "logo_inst  busq_prod   usuario     usuario "
                                 "logo_inst filtro_prod logo_prod  logo_prod";
@@ -166,26 +168,31 @@ header{
             border: none;
             background-color: inherit;
             img{
-                width: 30px;           
+                width: 100%;      
+                height: 30px;     
             }
         }
         .nav-item{
-            display: none; 
+            display: none;           
             position: absolute; 
-            background-color: white;
+            background-color: #ea98ff;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             z-index: 1000; 
+            width: 100%;
             ul {
-                padding: 0;
-                margin: 0;
+                padding: 0 ;
+                margin: 0 ;
+                width: 100%;
                 list-style-type: none; /* Elimina puntos de la lista */
                 li {
-                    margin: 10px 0; /* Espaciado vertical entre items */        
+                    margin: 2vw auto; /* Espaciado vertical entre items */    
+                    width: 100%;
+                    text-align: center;
                     a {
                         text-decoration: none; 
-                        font-size: 1.3rem;     
-                        font-weight: 700;  
-
+                        font-size: 2vw;     
+                        font-weight: 700; 
+                        width: 100% ;
                         &:hover {
                             color: #007bff; /* Color al pasar el ratón */        
                         }
@@ -200,7 +207,7 @@ header{
     }    
     .menu_principal { 
         grid-area: menu;
-        /*display: none;  TODO */
+        display: none; /* TODO */
         li{ 
             display: inline;     
             margin: auto 2.2%;
@@ -223,7 +230,7 @@ header{
         margin: 0 auto;
         p{
             font-family: "Playwrite AR", serif;
-            font-size: 1.2em;
+            font-size: 5vw;
             font-weight: 700;
         }
         
@@ -318,20 +325,18 @@ main{
             display: inline-block;     
             margin: auto 2.2%;
             list-style-type: none;
-            padding:0 4%;  
-            p{ 
-                font-size: .8em;
-                font-weight: 700;
-                border: 3px solid rgb(229, 139, 247);
-                background-color: rgb(238, 181, 250);
-                border-radius: 20px; 
-                padding: 4px;
-                margin: 4px;
+            font-size: .8em;
+            font-weight: 700;
+            border: 3px solid rgb(229, 139, 247);
+            background-color: rgb(238, 181, 250);
+            border-radius: 20px; 
+            padding: 4px;
+            margin: 4px;
+            p{
+                padding: 6px;  
             }
-
         }
     }
-
     .nosotros{
         margin: 0 15% ;
         text-align:justify
@@ -340,16 +345,15 @@ main{
                 padding:  20rem AUTO;
             }
         }
-        
     }   
 /***************************************************/
 /********     para la pagina productos      ********/
 /***************************************************/
 /********       comenzando                  ********/
 
-    .contenedor_tarjetas{
+    /*.contenedor_tarjetas{
         background-color: rgb(150, 206, 61);
-    }
+    }*/
     .contenedor_tarjetas{
         margin:0 auto;
         display:flex;
@@ -381,19 +385,16 @@ main{
             display: inline-block;     
             margin: auto 2.2%;
             list-style-type: none;
-            padding:0 1%;  
-            div{   font-size: .8em;
-                font-weight: 700;
-                border: 3px solid rgb(229, 139, 247);
-                background-color: rgb(238, 181, 250);
-                border-radius: 20px; 
-                padding: 4px;
-                margin: 4px;
-                p{
-                    padding: 6px;  
-                }
+            font-size: .8em;
+            font-weight: 700;
+            border: 3px solid rgb(229, 139, 247);
+            background-color: rgb(238, 181, 250);
+            border-radius: 20px; 
+            padding: 4px;
+            margin: 4px;
+            p{
+                padding: 6px;  
             }
-
         }
     }
 
@@ -485,23 +486,9 @@ main{
         }
     }    
 }
+/******* original para tamaño movil 
 /***********************************************************************************************/
-@media screen and (max-width : 480px){
-    /*
-        320px — 480px: Dispositivos móviles
-        481px — 768px: iPads, Tabletas
-        769px — 1024px: pantallas pequeñas, laptops
-        1025px — 1200px: Computadoras de escritorio, pantallas grandes
-        1201px y más —  Pantallas extra-grandes, TV 
-    */
-    header{
-        .menu_principal { 
-            display: none; 
-        }  
-    }  
-}
-/***********************************************************************************************/
-@media screen and (min-width : 480px)and (max-width : 768px){
+@media screen and (min-width : 601px)and (max-width : 900px){
     body{
         .colorFondo{
             background: orange;
@@ -543,7 +530,7 @@ main{
     main{
         .razonSocial{
                 font-size: 1.1em;                            
-            }
+        }
         /***************************************************/
         /********       para la pagina index        ********/
         /***************************************************/
@@ -569,7 +556,7 @@ main{
 
 }
 /***********************************************************************************************/
-@media screen and (min-width : 768px){
+@media screen and (min-width : 901px){
     /*
         320px — 480px: Dispositivos móviles
         481px — 768px: iPads, Tabletas
