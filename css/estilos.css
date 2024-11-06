@@ -97,6 +97,18 @@ footer{           /* header, */
         margin-bottom:1rem ;
     }
 }
+.contenerdor-body-grid{
+    /*height: 100vh;*/
+    display: grid;
+    /*filas de la grilla*/
+    grid-template-rows:15 auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:"header"
+                        "main"
+                        "aside"
+                        "footer"
+                        ;
+}
 body{
 
     
@@ -146,7 +158,8 @@ header{
         grid-template-rows:    1fr 1fr 1fr;
         grid-template-areas:    "empresa     empresa    empresa      menu "
                                 "logo_inst  busq_prod   usuario     usuario "
-                                "logo_inst filtro_prod logo_prod  logo_prod";
+                                "logo_inst filtro_prod logo_prod  logo_prod"
+                                ;
         /*
         grid-template-areas:    "logo_inst     menu        menu         menu     menu       logo_prod   logo_prod"
                                 "logo_inst filtro_prod  busq_prod  busq_prod  usuario_sup  usuario_sup usuario_reg"
@@ -207,7 +220,7 @@ header{
     }    
     .menu_principal { 
         grid-area: menu;
-        display: none; /* TODO */
+        display: none; /* para moviles no se usa */
         li{ 
             display: inline;     
             margin: auto 2.2%;
