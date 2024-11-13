@@ -1,27 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AR:wght@100..400&display=swap');
-/*@import url('https://fonts.googleapis.com/css2?family=Berkshire&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');*/
-/*@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');*/
-
-
-
-/* ver hace invisible .clase elegida { display: none !important; } */
-
-/***************************************************/
-/******** para todas las paginas en general ********/
-/***************************************************/
-/********       Limapiar y ordenar          ********/
-
-section[id]{
-    scroll-margin-top:150px;
-}
-
-
 .fuente50px{
     font-size: 55px;
 }
 .colorPrincipal{
-    background-color:  #ea98ff;
-    color: black;
+/*    background-color:  #ea98ff;
+    color: black;*/
     a{
         color:black;
     }
@@ -32,12 +14,7 @@ section[id]{
     background: -webkit-linear-gradient(121deg,#efb3ff 0%, #f2d6f8 16%, #efb3ff 33%, #f2d6f8 50%, #efb3ff 67%, #f2d6f8 84%, #efb3ff 100%);
     background: -moz-linear-gradient(121deg,#efb3ff 0%, #f2d6f8 16%, #efb3ff 33%, #f2d6f8 50%, #efb3ff 67%, #f2d6f8 84%, #efb3ff 100%);
 }*/
-.fuenteNegrita{
-    font-weight: 700;
-}
-.fuenteNegrita60{
-    font-weight: 600;
-}
+
 .texo_centrado{
     text-align:center ;
 }
@@ -98,210 +75,20 @@ section[id]{
         margin-bottom:1rem ;
     }
 }
-.contenerdor-body-grid{
-    /*height: 100vh;*/
-    display: grid;
-    /*filas de la grilla*/
-    grid-template-rows: auto auto auto auto;
-    grid-template-columns: auto;
-    grid-template-areas:"header"
-                        "main"
-                        "aside"
-                        "footer"
-                        ;
-}
-body{
 
     
-    .colorFondo{
-        background: #efb3ff;
-        background: linear-gradient(121deg,#efb3ff 0%, #f2d6f8 16%, #efb3ff 33%, #f2d6f8 50%, #efb3ff 67%, #f2d6f8 84%, #efb3ff 100%);
-        background: -webkit-linear-gradient(121deg,#efb3ff 0%, #f2d6f8 16%, #efb3ff 33%, #f2d6f8 50%, #efb3ff 67%, #f2d6f8 84%, #efb3ff 100%);
-        background: -moz-linear-gradient(121deg,#efb3ff 0%, #f2d6f8 16%, #efb3ff 33%, #f2d6f8 50%, #efb3ff 67%, #f2d6f8 84%, #efb3ff 100%);  
-    }
-    *{
-        /*fuente*/
-        font-family: "Montserrat", sans-serif;
-        font-size: .8rem; 
-        margin:0;
-        padding:0;
-        box-sizing: border-box;
-    }
-    h1,h2,h3,h4,h5,h6{
-        font-family: "Playwrite DE Grund", cursive;
-        text-align:center ;
-    }    
-    p{
-        font-size: .8rem;
-    }
-    h1{
-        font-size: 1.7rem;
-        margin-bottom: 2rem ;
-    }
-    h2{
-        font-size: 1.4rem;
-        margin: 2.4rem ;
-    }
-    h3{
-        font-size: 0.93rem ;
-        margin: 1.6rem ;
-    }
-
-}    
 .header{
-    grid-area:header;   
-    width: 100%;
-    margin: 0;
-    position:sticky;
-    top:0;
-    .container_header_grid {
-        display: grid;
-        grid-template-columns: 1fr 3.7fr 0.3fr 1fr;
-        grid-template-rows:    1fr 1fr 1fr;
-        grid-template-areas:    "empresa     empresa    empresa      menu "
-                                "logo_inst  busq_prod   usuario     usuario "
-                                "logo_inst filtro_prod logo_prod  logo_prod"
-                                ;
-        /*
-        grid-template-areas:    "logo_inst     menu        menu         menu     menu       logo_prod   logo_prod"
-                                "logo_inst filtro_prod  busq_prod  busq_prod  usuario_sup  usuario_sup usuario_reg"
-                                "logo_inst filtro_prod  busq_prod  busq_prod  usuario_inf  usuario_inf usuario_reg";
-        menu tranformo en eenu desplegale
-        */
-        gap: 0px;
-        padding: 0 1%;
-        background-color: #ea98ff;
-        justify-items:space-around;
-        align-items:center;
-        align-content: space-evenly;
-    }
-    .nav_desplegable {
-        grid-area: menu;
-        border: none;
-        position: relative;
-        .nav_boton{
-            border: none;
-            background-color: inherit;
-            img{
-                width: 100%;      
-                height: 30px;     
-            }
-        }
-        .nav-item{
-            display: none;           
-            position: absolute; 
-            background-color: #ea98ff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            z-index: 1000; 
-            width: 100%;
-            ul {
-                padding: 0 ;
-                margin: 0 ;
-                width: 100%;
-                list-style-type: none; /* Elimina puntos de la lista */
-                li {
-                    margin: 2vw auto; /* Espaciado vertical entre items */    
-                    width: 100%;
-                    text-align: center;
-                    a {
-                        text-decoration: none; 
-                        font-size: 2vw;     
-                        font-weight: 700; 
-                        width: 100% ;
-                        &:hover {
-                            color: #007bff; /* Color al pasar el ratón */        
-                        }
-                    }    
-                }
-            }
-        }
-    }
-    &:focus-within .nav-item {
-        display: block; /* Muestra el menú cuando el botón tiene foco */
-            
-    }    
-    .menu_principal { 
-        grid-area: menu;
-        display: none; /* para moviles no se usa */
-        li{ 
-            display: inline;     
-            margin: auto 2.2%;
-            list-style-type: none;
-            padding:0 4%;       
-        }
-        a{
-            text-decoration: none; 
-            font-size: 1.3rem;     
-            font-weight: 700;          
-        }
-    }
+    
+
     .espacio_vacio { 
         grid-area: vacio; 
     }
-    .empresa { 
-        grid-area: empresa;
-        color: #69177e;        
-        margin: 0 auto;
-        p{
-            font-family:"Playwrite AR", serif;
-            font-size: 5vw;
-            font-weight: 700;
-        }        
-    }
-    .logo_institucional { 
-        grid-area: logo_inst;
-        object-fit: fill;
-        img{ 
-            width: 100%; 
-            margin: 0.5%;
-        }        
-    }
-    .logo_productos { 
-        grid-area: logo_prod; 
-        object-fit: fit;
-        margin: auto;
-        img{ 
-            width: 100%;
-            margin: 0.5%;           
-        }
-    }
-    .filtro_producto { 
-        grid-area: filtro_prod; 
-    }    
-    .busqueda_producto { 
-        grid-area: busq_prod; 
-        text-align:center;       
-        width: 80%;
-        input{
-            width: 100%;
-        }    
-    }
-    .inicioSesion { 
-        grid-area: usuario;
-        text-decoration: none; 
-        text-align:center;
-        width: 98%;
-        font-size:0.5rem;
-        border: 2px solid black;
-        border-radius: 10px;
-        a{
-            font-size:0.8rem;
-            text-decoration: none;
-            font-weight: 700;
-
-        }
-    } 
-}
-.main{
-    grid-area:main;
-    .razonSocial{
-        font-family: "Playwrite AR", serif;
-        color: #69177e;
-        font-size: 1.2em;                            
-        font-weight: 700;
-    }
 
     
+}
+.main{
+
+ 
 /***************************************************/
 /********       para la pagina index        ********/
 /***************************************************/
@@ -518,55 +305,11 @@ footer{
 /******* original para tamaño movil 
 /***********************************************************************************************/
 @media screen and (min-width : 601px)and (max-width : 900px){
-    .contenerdor-body-grid {
-        /*height: 100vh;*/
-        display: grid;
-        /*filas de la grilla*/
-        grid-template-rows:    auto auto auto;
-        grid-template-columns: 4fr 1fr;
-        grid-template-areas:"header header"
-                            "main   aside"
-                            "footer footer"
-                            ;
-    }
+
     body{
-        .colorFondo{
-            background: orange;
-        }
-        *{
-            /*fuente*/
-            font-size: .9rem; 
-        }
-        p{
-            font-size: .9rem;
-        }
-        h1{
-            font-size: 2.7rem; 
-            margin-bottom: 3.6rem ;
-        }
-        h2{
-            font-size: 1.8rem;
-            margin: 2.7rem ;
-        }
-        h3{
-            font-size: 1.1925rem ;
-            margin: 1.8rem ;
-        }
+
         header{
             background-color: aquamarine;
-            .container_header_grid {
-                grid-template-columns: 1fr 2fr 1.7fr 1.3fr ;
-                grid-template-rows: 1fr 1fr 1fr ;
-                grid-template-areas:    "empresa     empresa     empresa    usuario "
-                                        "logo_inst     menu        menu    logo_prod"
-                                        "logo_inst filtro_prod  busq_prod  logo_prod"
-                                        ;
-            }
-            .nav_boton{
-                display: none;
-            }
-            .menu_principal{
-                display: block;
             }
         }  
         main{
@@ -620,51 +363,9 @@ footer{
     */ 
     body{
         .colorFondo{
-                background: yellow;
+        /        background: yellow;
         }
-        *{
-            /*fuente*/
-            font-family: "Montserrat", sans-serif;
-            font-size: 1rem; 
-            margin:0;
-            padding:0;
-            box-sizing: border-box;
-        }
-        h1,h2,h3,h4,h5,h6{
-            font-family: "Playwrite DE Grund", cursive;
-            text-align:center ;
-        }    
-        p{
-            font-size: 1rem;
-        }
-        h1{
-            font-size: 3rem; 
-            margin-bottom: 4rem ;
-        }
-        h2{
-            font-size: 2rem;
-            margin: 3rem ;
-        }
-        h3{
-            font-size: 1.325rem ;
-            margin: 2rem ;
-        }
-    }
-    header{
-        .container_header_grid {
-            grid-template-columns: 1fr 3fr 4fr 1.5fr 1.5fr 0.5fr 60px;
-            grid-template-rows: 1.2fr 0.5fr 0.5fr;
-            grid-template-areas:    "logo_inst     menu        menu         menu     menu       logo_prod   logo_prod"
-                                    "logo_inst filtro_prod  busq_prod  busq_prod  usuario_sup  usuario_sup usuario_reg"
-                                    "logo_inst filtro_prod  busq_prod  busq_prod  usuario_inf  usuario_inf usuario_reg";
-        }
-        .nav_boton{
-            display: none;
-        }
-        .menu_principal{
-            display: block;
-        }  
-    }    
+
     main{
         .razonSocial{
             font-size: 1.2em;                            
