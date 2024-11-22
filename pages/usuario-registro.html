@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Fragancias Argentinas - Venta perfumes Millanel </title>
+    <title>Usuario registro | Fragancias Argentinas - Venta perfumes Millanel </title>
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">  
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
@@ -92,61 +92,90 @@
         </section>
     </header>
     <main class="main color-fondo">
-        <h1>Contacto</h1>
-        <div class="main-contacto-contenedor">    
-            <div class="main-contacto-item">
-                <form class="color-principal" action="">
-                    <h2>Comunicarse con nosotros: </h2>          
-                    <div class="form-linea"> 
-                        <input type="text" required name="nombre" id="nombre" placeholder="Ingrese su nombre" minlength="3" maxlength="25">
-                    </div>
-                    <div class="form-linea"> 
-                        <input type="email" required name="email" id="email" placeholder="Ingrese un email valido"> 
-                    </div>
-                    <div class="form-linea"> 
-                        <select name="provincia" id="provincia">
-                            <option value="1" selected>CABA (Ciud.Aut.Bs.As.)</option>
-                            <option value="2">Buenos Aires</option>
-                            <option value="3">Catamarca</option>
-                            <option value="4">Chaco</option>
-                            <option value="5">Chubut</option>
-                            <option value="6">Córdoba</option>
-                            <option value="7">Corrientes</option>
-                            <option value="8">Entre Ríos</option>
-                            <option value="9">Formosa</option>
-                            <option value="10">Jujuy</option>
-                            <option value="11">La Pampa</option>
-                            <option value="12">La Rioja</option>
-                            <option value="13">Mendoza</option>
-                            <option value="14">Misiones</option>
-                            <option value="15">Neuquén</option>
-                            <option value="16">Río Negro</option>
-                            <option value="17">Salta</option>
-                            <option value="18">San Juan</option>
-                            <option value="19">San Luis</option>
-                            <option value="20">Santa Cruz</option>
-                            <option value="21">Santa Fe</option>
-                            <option value="22">Santiago del Estero</option>
-                            <option value="23">Tierra del Fuego, Antárt.e Is.del Atlán.Sur<</option>
-                            <option value="24">Tucumán</option>
-                        </select>
-                    </div>
-                    <div class="form-linea">
-                        <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su número telefónico">
-                    </div>    
-                    <div class="form-cuadro">
-                        <input type="text" required name="mensaje" id="mensaje" placeholder="Ingrese su mensaje o su consulta por favor" minlength="30" maxlength="2000">
-                    </div>
-                </form>  
-            </div>
-            <div class="main-contacto-item">        
-                <div class="mapa">
-                    <h2>Visitanos en: </h2>
-                    <p><span class="fuente-negrita6">Dirección:</span> Avenida Rivadavia 5450, CABA, CP 1405</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3283.330970078389!2d-58.444370925314786!3d-34.62107555841321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1728676103257!5m2!1ses!2sar"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+        <h1>Ingrese a su cuenta</h1>
+        <div class="login-contenedor color-principal">    
+            <form class="login-form" action="">
+                <h2>Form. Registro</h2>
+                
+                <div class="login-item"> 
+                    <input type="text" required name="nombre" id="nombre" placeholder="Ingrese su nombre" minlength="3" maxlength="25">
+                </div>
+                <div class="login-item"> 
+                    <input type="email" required name="email" id="email" placeholder="Ingrese un email valido"> 
+                </div>
+                <div class="login-item"> 
+                    <input type="email" required name="email-aux" id="emailAux" placeholder="Repita el email"> 
+                </div>
+                <div class="login-select"> 
+                    <select name="provincia" id="provincia">
+                        <option value="1" selected>CABA (Ciud.Aut.Bs.As.)</option>
+                        <option value="2">Buenos Aires</option>
+                        <option value="3">Catamarca</option>
+                        <option value="4">Chaco</option>
+                        <option value="5">Chubut</option>
+                        <option value="6">Córdoba</option>
+                        <option value="7">Corrientes</option>
+                        <option value="8">Entre Ríos</option>
+                        <option value="9">Formosa</option>
+                        <option value="10">Jujuy</option>
+                        <option value="11">La Pampa</option>
+                        <option value="12">La Rioja</option>
+                        <option value="13">Mendoza</option>
+                        <option value="14">Misiones</option>
+                        <option value="15">Neuquén</option>
+                        <option value="16">Río Negro</option>
+                        <option value="17">Salta</option>
+                        <option value="18">San Juan</option>
+                        <option value="19">San Luis</option>
+                        <option value="20">Santa Cruz</option>
+                        <option value="21">Santa Fe</option>
+                        <option value="22">Santiago del Estero</option>
+                        <option value="23">Tierra del Fuego, Antárt.e Is.del Atlán.Sur</option>
+                        <option value="24">Tucumán</option>
+                    </select>
+                </div>
+                <div class="login-item">
+                    <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su número telefónico">
+                </div>
+                <div class="login-item"> 
+                    <input type="text" required name="usuario" id="usuario" placeholder="Ingrese su usuario" minlength="3" maxlength="25">
+                </div>
+                <div class="login-item"> 
+                    <input type="password" required name="clave" id="clave" placeholder="Ingrese una contraseña"> 
+                </div>
+                <div class="login-item"> 
+                    <input type="password" required name="clave-aux" id="claveAux" placeholder="Repita la contraseña"> 
+                </div>
+                <div class="login-select"> 
+                    <select name="pregunta-1" id="pregunta-1">
+                        <option value="1" selected>¿Cuál es tu comida favorita?</option>
+                        <option value="2">¿Cómo se llama de tu primera mascota?</option>
+                        <option value="3">¿Cuál es tu libro favorito?</option>
+                        <option value="4">¿Dónde asististe a la primaria?</option>
+                        <option value="5">¿Cuál es el destino favorito de vacaciones?</option>
+                    </select>
+                </div>
+                <div class="login-item"> 
+                    <input type="text" required name="Preguna1" id="Pegunta1" placeholder="Responda la pregunta anterior" minlength="3" maxlength="25">
+                </div>
+                <div class="login-select"> 
+                    <select name="pregunta-2" id="pregunta-2">
+                        <option value="1" selected>¿Qué nueva mascota te gustaría tener?</option>
+                        <option value="2">¿Cuál es tu película favorita?</option>
+                        <option value="3">¿Cuál es tu cancion favorita?</option>
+                        <option value="4">¿Cuál es el actriz/actor favorita/o?</option>
+                        <option value="5">¿Cómo se llama tu abuelo/a preferido?</option>
+                    </select>
+                </div>
+                <div class="login-item"> 
+                    <input type="text" required name="Preguna2" id="Pegunta2" placeholder="Responda la pregunta anterior" minlength="3" maxlength="25">
+                </div>
+                <div class="login-boton">
+                    <button type="submit">Continuar</button>
+                    <button type="submit">Cancelar</button>
                 </div>  
-            </div>
-        </div> 
+            </form>  
+        </div>
     </main>
     <aside class="aside color-secundario">
         <h1>Espacio pubicitario</h1>  
