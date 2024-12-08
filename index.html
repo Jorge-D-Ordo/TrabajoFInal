@@ -1,257 +1,152 @@
-<!-- alt z cre multininea del texto para que entre la ventana -->    
 <!DOCTYPE html>
 <html lang="es">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fragancias Argentinas | Venta perfumes Millanel </title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
-<body class="contenerdor-body-grid">
-    <header class="header color-principal">
-        <section class="contenerdor-header-grid">
-            <div class="logo-institucional">
-                <a href="index.html">
-                    <img class="logo" src="./assets/img/rosa _128px.png" alt="logo de Fragancias Argentinas, un diujo de la flor de la rosa"> 
-                </a> 
-            </div>
-            <div class="logo-productos">
-                <a href="https://www.millanel.com" target="_blank">
-                    <img class="logo" src="./assets/img/millanel_logo.png" alt="logo de millanel cosmeticos, logotipo flor con nombre debajo "> 
-                </a>
-            </div>
-            <div class="empresa">
-                <p>Fragancias Argentinas</p> 
-            </div> 
-            <div class="sesion" id="sesion">
-                <a href="./pages/usuario.html">Sesión</a>
-            </div>
-            <div class="nav-principal"> <!-- para monitores y tablets -->
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="index.html">Inicio</a>
-                        </li>  
-                        <li>
-                            <a href="./pages/productos.html">Productos</a>
-                        </li>
-                        <li>
-                            <a href="#nosotros">Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="./pages/contacto.html">Contacto</a>
-                        </li>
-                        <li>
-                            <a href="./pages/carrito.html" >
-                                <img src="./assets/img/iconos/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
-                            </a>
-                        </li>
-                    </ul>
-                </nav>        
-            </div>
-            <div class="nav-desplegable-contenedor" ><!-- para moviles -->
-                <input type="checkbox" id="alternar-menu" class="alternar-menu" >
-                <label for="alternar-menu" class="nav-boton">
-                    <img src="./assets/img/iconos/menu3lineas.svg" alt="Icono de menú">
-                </label>
-                <nav class="nav-desplegable-item color-principal">
-                    <ul>
-                        <li>
-                            <a href="index.html">Inicio</a>
-                        </li>  
-                        <li>
-                            <a href="./pages/productos.html">Productos</a>
-                        </li>
-                        <li>
-                            <a href="#nosotros">Nosotros</a>
-                        </li>
-                        <li>
-                            <a href="./pages/contacto.html">Contacto</a>
-                        </li>
-                        <li>
-                            <a href="./pages/carrito.html" >
-                                <img src="./assets/img/iconos/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
-                            </a>
-                        </li>
-                    </ul>
-                </nav>        
-            </div>
-            <div class="filtro-producto">
-                <label for="opcion-genero">Fragancia:</label>
-                <select id="opcion-genero">
-                    <option value="todos" selected>todas</option>
-                    <option value="femenino">femeninas</option>
-                    <option value="masculino">masculinas</option>
-                    <option value="unisex">unisex</option> 
-                </select>    
-            </div>
-            <div class="busqueda-producto">
-                <input type="search" placeholder="Buscar una fragancia...." id="BusquedaText">   
-            </div>
-        </section>
-    </header>
-    <main class="main color-fondo">
-        <h1><div class="razon-social">Fragancias Argentinas</div> Perfumes Millanel (alternativas olfativas) </h1>
-        <section id="oferta_f">
-            <h2>Ofertas para mujer</h2>
-            <div class="oferta-contenerdor">
-                <div class="oferta-item">
-                    <img src="./assets/img/ofertas/Oferta1.jpg" alt="Oferta1, imagen perfume Belle Rose">
-                    <ul> 
-                        <li id="oferta1-50">
-                            <p>50ml</p>
-                            <p>$ 14499,99</p>
-                            <p>Comprar</p>
-                        </li>                         
-                    </ul>
-                </div>
-                <div class="oferta-item">
-                    <img src="./assets/img/ofertas/Oferta2.jpg" alt="Oferta2, imagen perfume Icónica">
-                    <ul> 
-                        <li id="oferta5-30">
-                            <p>30ml</p>
-                            <p>$ 8599,99</p>
-                            <p>Comprar</p>
-                        </li>
-                        <li id="oferta5-60">
-                            <p>60ml</p>
-                            <p>$ 10999,99</p>
-                            <p>Comprar</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section id="oferta_m">
-            <h2>Ofertas para hombre</h2>
-            <div class="oferta-contenerdor" >
-                <div class="oferta-item">
-                    <img src="./assets/img/ofertas/Oferta3.jpg" alt="Oferta3, imagen perfume Rebelde">    
-                    <ul> 
-                        <li id="oferta6-30">
-                            <p>30ml</p>
-                            <p>$ 8599,99</p>
-                            <p>Comprar</p>
-                        </li> 
-                        <li id="oferta6-60">
-                            <p>60ml</p>
-                            <p>$ 10999,99</p>
-                            <p>Comprar</p>
-                        </li>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <header class="header color-principal">
+                    <section class="contenerdor-header-grid">
+                        <div class="logo-institucional">
+                            <p>logo institucional</p>
+                        </div>
+                        <div class="logo-productos">
+                            <p>logo empresa</p>
+                        </div>
+                        <div class="empresa">
+                            <p>Fragancias Argentinas</p> 
+                        </div> 
+                        <div class="sesion" id="sesion">
+                            <a href="./pages/usuario.html">Sesión</a>
+                        </div>
+                        <div class="nav-principal"> <!-- para monitores y tablets -->
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Inicio</a>
+                                    </li>  
+                                    <li>
+                                        <a href="./pages/productos.html">Productos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#nosotros">Nosotros</a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/contacto.html">Contacto</a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/carrito.html" >
+                                            <img src="./assets/img/iconos/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>        
+                        </div>
+                        <div class="nav-desplegable-contenedor" ><!-- para moviles -->
+                            <input type="checkbox" id="alternar-menu" class="alternar-menu" >
+                            <label for="alternar-menu" class="nav-boton">
+                                <img src="./assets/img/iconos/menu3lineas.svg" alt="Icono de menú">
+                            </label>
+                            <nav class="nav-desplegable-item color-principal">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Inicio</a>
+                                    </li>  
+                                    <li>
+                                        <a href="./pages/productos.html">Productos</a>
+                                    </li>
+                                    <li>
+                                        <a href="#nosotros">Nosotros</a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/contacto.html">Contacto</a>
+                                    </li>
+                                    <li>
+                                        <a href="./pages/carrito.html" >
+                                            <img src="./assets/img/iconos/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>        
+                        </div>
+                        <div class="filtro-producto">
+                            <label for="opcion-genero">Fragancia:</label>
+                            <select id="opcion-genero">
+                                <option value="todos" selected>todas</option>
+                                <option value="femenino">femeninas</option>
+                                <option value="masculino">masculinas</option>
+                                <option value="unisex">unisex</option> 
+                            </select>    
+                        </div>
+                        <div class="busqueda-producto">
+                            <input type="search" placeholder="Buscar una fragancia...." id="BusquedaText">   
+                        </div>
+                    </section>
+                </header>  
+                    
+                
+                    
 
-                        <li id="oferta6-100">
-                            <p>100ml</p>
-                            <p>$ 15999,99</p>
-                            <p>Comprar</p>
-                        </li> 
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section id="oferta_U">
-            <h2>Ofertas para todos</h2>
-            <div class="oferta-contenerdor" >
-                <p>Por el momento no tenemos ofertas en esta categoria</p>
-            </div>
-        </section>
-        <section class="nosotros" id="nosotros">
-            <h2>Nosotros</h2>
-            <h3>Bienvenidos a <span class="razon-social">Fragancias Argentinas</span></h3>
-            <p>
-                En <span class="razon-social">Fragancias Argentinas</span>, somos revendedores apasionados de Michanel Cosmética, especializados en ofrecer fragancias alternativas (de diseñador) y exclusivas de millanel. Nuestro objetivo es proporcionar a nuestros clientes una experiencia única a través de productos que no solo son de alta calidad, sino también éticos.           
-            </p>
-            <h3>¿Quiénes somos?</h3>
-            <p>
-                Nos dedicamos a la distribución de fragancias tanto para mujeres, hombres como unisex. Cada una de nuestras opciones está diseñada para captar la esencia de la sofisticación y la elegancia, permitiendo a nuestros clientes encontrar su aroma perfecto.
-            </p>  
-            <h3>Compromiso con el bienestar</h3>
-            <p>
-                Todos nuestros productos son veganos y cruelty-free, lo que significa que están formulados sin ingredientes de origen animal y no han sido probados en animales. Creemos en la belleza responsable y en ofrecer opciones que respeten tanto a las personas como al medio ambiente.
-            </p>    
-            <h3>¿Por qué elegirnos?</h3>
-            <ul>
-                <li>
-                    <div class="fuente-negrita7">Calidad Garantizada:</div>
-                        Trabajamos con productos Millanel cosmeticos cuya calidad esampliamente reconocida para asegurarnos de que nuestros clientes reciban solo lo mejor    
-                </li>
-                <li>
-                    <div class="fuente-negrita7">Variedad de Opciones:</div> Nuestra amplia gama de productos incluye fragancias que se adaptan a todos los gustos y estilos.
-                </li>
-                <li>
-                    <div class="fuente-negrita7">Atención Personalizada:</div> Nos esforzamos por brindar un servicio excepcional, ayudando a nuestros clientes a encontrar el aroma que mejor se ajuste a su personalidad.
-                </li>
-                <li>
-                    <div class="fuente-negrita7">Precios Economicos:</div> Los productos de Millanel cosmeticos se ofrecen a precios muy competitivos y bajos en comparacion con otras firmas, asegurando que puedas disfrutar de lujo sin sacrificar tu presupuesto.
-                </li>
-            </ul>
-            <p>
-                Te invitamos a explorar nuestra colección y descubrir el mundo de fragancias alternativas (de diseñador) exclusivas de millanel que tenemos para ofrecerte. 
-            </p>
-            <h4 >
-                En <span class="razon-social">Fragancias Argentinas</span>, la belleza y el compromiso con el bienestar van de la mano. 
-            </h4>
-        </section>    
-    </main>
-    <aside class="aside color-secundario">
-        <h1>Espacio pubicitario</h1>  
-        <section class="pubicidad-contenedor">
-            <div class="pubicidad-tarjeta">
 
-                <div class="pubicidad-item">
-                    <p>Su agancia de viaje</p>
-                    <video autoplay muted loop controls>
-                        <source src="./assets/video/Publicidad1.mp4" type="video/mp4">
-                    </video>           
-                </div> 
-            </div>
-            <div class="pubicidad-tarjeta">
-                <p>Destinos increibles</p>
-                <div class="pubicidad-item">
-                    <video autoplay muted loop controls>
-                        <source src="./assets/video/Publicidad2.mp4" type="video/mp4">
-                    </video> 
-                </div>
-            </div>
-        </section>        
-    </aside>
-    <footer class="footer color-principal">
-        <div class="contacto-contenedor">
-            <div class="contacto-item">
-                <p><span class="fuente-negrita6">Dirección:</span> Avenida Rivadavia 5450, CABA, CP 1405</p>
-                <p><span class="fuente-negrita6">Teléfono:</span> (11) 5360-XXXX</p>
-                <p><span class="fuente-negrita6">Correo electrónico:</span>  fragancias.argentinas@gmail.com</p>
-            </div>
-            <div class="contacto-item">
-                <p>Millanel cosmetico es marca registrada</p>
-                <p>Todos los derechos reservados 2024</p>
-            </div>
-        </div> 
-        <div class="iconos-redes">
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="./assets/img/redes/2023_Facebook_icon.svg" alt="Logo Facebook" style="width:20px">
-            </a>
-            <a href="https://x.com/?lang=es" target="_blank">
-                <img src="./assets/img/redes/X_logo_2023.svg" alt="Logo X ex twitter" style="width:20px">
-            </a>
-            <a href="https://www.instagram.com" target="_blank">
-                <img src="./assets/img/redes/Instagram_logo_2022.svg" alt="Logo instragram" style="width:20px">
-            </a>
-            <a href="https://www.linkedin.com" target="_blank">
-                <img src="./assets/img/redes/linkedIn_icon2.svg" alt="Logo linkedin" style="width:20px">
-            </a>
-            <a href="https://web.telegram.org/k/"target="_blank">
-                <img src="./assets/img/redes/Telegram_logo.svg" alt="Logo Telegram" style="width:21px">
-            </a>
-            <a href="https://discord.com/"target="_blank">
-                <img src="./assets/img/redes/discord-round-color-icon.svg" alt="Logo Discord" style="width:21px">
-            </a>  
+
+
+
+            <!--        <div class="row">
+                        <logo-institucional class="col-4 col-sm-3 col-md-2 col-lg-1" style="background-color: yellow;">
+                            <a href="index.html">
+                                <img class="logo-institucional" src="./assets/img/rosa _128px.png" alt="logo de Fragancias Argentinas, un diujo de la flor de la rosa"> 
+                            </a>             
+                        </logo-institucional>
+                        <div class="col-8 col-sm-9 col-md-10 col-lg-11 ">
+                            <div class="row">
+                                <nombre-empresa class="col" style="background-color: red;">
+                                    nombre
+                                </nombre-empresa>                            
+                                <nav class="col" style="background-color: cyan;">
+                                    boton-nav o barra-navegacion
+                                </nav>
+                                <div class="col" style="background-color: green;">
+                                    bus-genero bus-pag
+                                </div>
+                                <div class="col" style="background-color: violet;">
+                                    inicio-sesion logo-empresa
+                                </div>
+                            </div>   
+                        </div>
+                        <logo-producto class="col" style="background-color: green;">
+                            logo emrpesa y boton menu
+                        </logo-producto
+                    
+                    </div>  -->    
+                
+            </div>    
         </div>
-        <div class="whatsapp-config">     
-            <a href="https://web.whatsapp.com/send?phone=+5491100000000" target="_blank">
-                <img src="./assets/img/redes/WhatsApp.svg" alt="Logo WhatsApp" >
-            </a> 
+        <div class="row">
+            <div class="col-sm-8 col-md-9 col-lg-10">
+                <main>
+                    <p>main</p>
+                </main>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <main>
+                    <p>aside</p>
+                </main>
+            </div>
+        </div>     
+        <div class="row">
+            <div class="col">
+                <footer>
+                    <p>© 2024 Fragancias Argentinas</p>
+                    <script src="./js/bootstrap.bundle.min.js"></script>
+                </footer>
+            </div>
         </div>
-    </footer>
+    </div>
 </body>
 </html>

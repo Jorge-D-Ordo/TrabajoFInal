@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fragancias Argentinas | Venta perfumes Millanel </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="./css/bootstrap.min.css"
+    <link rel="stylesheet" href="./css/estiloChatgtp.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <header class="contenedor-header-grid">
+                    <div class="logo-institucional">
+                        <a href="index.html">
+                            <img class="logo" src="./assets/img/rosa_128px.png" alt="Logo de Fragancias Argentinas, un dibujo de la flor de la rosa"> 
+                        </a> 
+                    </div>
+                    <div class="logo-productos">
+                        <a href="https://www.millanel.com" target="_blank">
+                            <img class="logo" src="./assets/img/millanel_logo.png" alt="Logo de Millanel Cosmeticos, logotipo flor con nombre debajo"> 
+                        </a>
+                    </div>
+                    <div class="empresa">
+                        <p>Fragancias Argentinas</p> 
+                    </div> 
+                    <div class="sesion" id="sesion">
+                        <a href="./pages/usuario.html">Sesión</a>
+                    </div>
+                    <div class="nav-principal"> <!-- Menú para monitores y tablets -->
+                        <nav>
+                            <ul>
+                                <li><a href="index.html">Inicio</a></li>  
+                                <li><a href="./pages/productos.html">Productos</a></li>
+                                <li><a href="#nosotros">Nosotros</a></li>
+                                <li><a href="./pages/contacto.html">Contacto</a></li>
+                                <li>
+                                    <a href="./pages/carrito.html">
+                                        <img src="./assets/img/iconos/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>        
+                    </div>
+                    <div class="nav-desplegable-contenedor"> <!-- Menú para móviles -->
+                        <input type="checkbox" id="alternar-menu" class="alternar-menu">
+                        <label for="alternar-menu" class="nav-boton">
+                            <img src="./assets/img/iconos/menu3lineas.svg" alt="Icono de menú">
+                        </label>
+                        <nav class="nav-desplegable-item color-principal">
+                            <ul>
+                                <li><a href="index.html">Inicio</a></li>  
+                                <li><a href="./pages/productos.html">Productos</a></li>
+                                <li><a href="#nosotros">Nosotros</a></li>
+                                <li><a href="./pages/contacto.html">Contacto</a></li>
+                                <li>
+                                    <a href="./pages/carrito.html">
+                                        <img src="./assets/img/iconos/CarritoCompras.svg" alt="Logo de carrito de compras" style="width:30px">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>        
+                    </div>
+                    <div class="filtro-producto">
+                        <label for="opcion-genero">Fragancia:</label>
+                        <select id="opcion-genero">
+                            <option value="todos" selected>todas</option>
+                            <option value="femenino">femeninas</option>
+                            <option value="masculino">masculinas</option>
+                            <option value="unisex">unisex</option> 
+                        </select>    
+                    </div>
+                    <div class="busqueda-producto">
+                        <input type="search" placeholder="Buscar una fragancia...." id="BusquedaText">   
+                    </div>
+                </header>
+            </div>    
+        </div>
+
+        <div class="row">
+            <div class="col-sm-8 col-md-9 col-lg-10">
+                <main>
+                    <p>Contenido principal</p>
+                </main>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <aside>
+                    <p>Contenido secundario</p>
+                </aside>
+            </div>
+        </div>     
+
+        <div class="row">
+            <div class="col">
+                <footer>
+                    <p>© 2024 Fragancias Argentinas</p>
+                    <script src="./js/bootstrap.bundle.min.js"></script>
+                </footer>
+            </div>
+        </div>
+    </div>   
+</body>
+</html>
